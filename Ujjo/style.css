@@ -1,0 +1,850 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*-------------------------------------*/
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*-------------------------------------*/
+body{
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    scrollbar-width: none;
+}
+.wrapper {
+    width: 100%;
+    
+}
+
+.container{
+    max-width: 1400px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;        
+}
+
+/*-----------header------------------------------*/
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.header__body{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+.menu__item{
+   height: 52px;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+}
+
+.red-butt{
+    background: #fb4b4d;
+    padding: 0 50px; 
+}
+
+.menu__link{
+    text-transform: uppercase;
+    color: #222;
+    font-size: 14px; 
+    line-height: 154%; 
+    letter-spacing: 0.04em; 
+    margin: auto 0;
+}
+
+.menu__item.red-butt .menu__link{
+    color: #fff;
+}
+
+.menu__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__logo-link{
+    margin: 0 30px;
+}
+
+.logo__circle{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.right{
+    background: #8b83f6;
+}
+
+.left{
+    background: #fb4b4d;
+}
+
+
+/*-----------hero------------------------------*/ 
+    
+.hero__container{
+    display: flex;
+    
+}
+/*-----------hero-one---------------------------*/
+.hero__one{
+    border-right: 1px solid #000;
+}
+
+.hero__big-logo{
+    position: relative;
+    max-height: 420px;
+    max-width: 700px;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__svg-one{
+    max-width: 657px; 
+    max-height: 384px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__svg-two{
+    max-width: 558px; 
+    max-height: 259px;
+    z-index: 2;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.hero__svg-one svg{
+    width: 100%;
+    height: 100%;
+}
+
+.hero__svg-two svg{
+    height: 100%;
+    width: 100%;
+}
+
+.hero__ticker{
+    border-top: 1px solid #000;    
+    overflow: hidden;
+    
+}
+
+.ticker__wrapper{
+    display: flex;
+} 
+.ticker__item span{
+    font-size: 17px;
+    line-height: 152%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ticker__item{
+    padding: 20px 20px;
+}
+
+.hero__pic-one{
+    padding: 20px;
+    border-top: 1px solid #000;
+}
+.hero__pic-one img{
+    width: 100%; 
+    height: 100%;
+}
+/*-----------hero-two---------------------------*/ 
+    
+.hero__title{
+    padding: 35px 40px;    
+}
+
+.title{
+    font-size: 58px; 
+    line-height: 111%; 
+    letter-spacing: 0.01em; 
+    text-transform: uppercase; 
+    text-align: center; 
+}
+
+    
+.hero__pic-two{
+    padding: 30px 20px;
+    border-top: 1px solid #000;
+    
+}
+    
+.hero__pic-two img{
+    width: 100%;
+    height: 100%;
+} 
+
+.hero__container{
+    border-bottom: 1px solid #000;
+}
+
+/*-----------one---------------------------*/ 
+
+.one__big-title{
+    display: flex;
+    padding: 40px;
+    border-bottom: 1px solid #000;
+}
+  
+.one__title{ 
+    font-size: 65px; 
+    line-height: 112%; 
+    letter-spacing: 0.01em; 
+    text-transform: uppercase; 
+    text-align: center; 
+    color: #000;
+    margin: 0 20px;
+}
+
+.showcase__header{
+    max-width: 1400px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.showcase__item-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+
+.showcase__item{
+    background: url("src/green.png") no-repeat center top;
+    width: 436px; 
+    height: 658px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;  
+}
+
+.showcase__pic{
+    padding-bottom:20px;
+}
+
+.showcase__pic img{
+    width: 390px; 
+    height: 411px; 
+}
+
+.showcase__title-one{
+    font-size: 18px; 
+    line-height: 156%; 
+    letter-spacing: 0.03em; 
+    text-transform: uppercase; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.showcase__title-two{
+    font-size: 32px; 
+    line-height: 119%; 
+    letter-spacing: 0.02em; 
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+
+
+
+/*--------------two------------------*/
+
+.two {
+    border-top: 1px solid #000;
+}
+
+.two__big-img img{
+    padding: 20px;
+    max-width: 1400px;
+    max-height: 680px;
+    width: 100%;
+    height: 100%;
+}
+/*--------------three------------------*/
+
+
+
+.three__container{
+    border-top: 1px solid #000;
+    display: flex;
+}
+
+.three__one{
+    width: 50%;
+    max-width: 100%;
+    
+    border-right: 1px solid #000;
+}
+
+.three__title{
+    margin: 0 0 auto;
+    padding: 50px 80px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 65px;
+    letter-spacing: .5px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+.three__img img{
+    padding-left: 2px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-style: none;
+}
+
+
+.three__two{
+    width: 50%;
+}
+
+.three__two-content{
+    padding: 130px 0;
+    background: url('src/back.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+}
+
+.three__text{
+    margin: 0 auto;
+    max-width: 390px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.three__text span:not(:last-child){
+    display: inline-block;
+    margin-bottom: 20px; 
+}
+
+
+
+
+/*-------------- solo-ticker ------------------*/
+.solo-ticker{
+    border-top: 1px solid #000; 
+}
+
+/*------------ four -------------*/
+
+.four__big-logo{
+    display: block;
+    margin-top: -180px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/*--------------footer----------------------------*/
+
+
+
+.footer__container{
+    border-top: 1px solid #000;
+    background: #cdfd3b;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
+.footer__link{
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+
+/*------- Предварительные медиазапросы -------------------*/
+
+/*------- hero ---------*/
+
+@media(max-width: 1150px)
+{
+    .hero__big-logo{
+        max-height: 360px;
+    }
+}
+
+/*------- one ---------*/
+
+@media(max-width: 1330px){
+    .showcase__item{
+        width: 400px;
+        height: 580px;
+    }   
+    .showcase__pic img{
+        width: 340px; 
+        height: 340px; 
+    }
+}
+@media(max-width: 1230px){
+    .showcase__item{
+        width: 360px;
+        height: 540px;
+    }
+    .showcase__pic img{
+        width: 320px; 
+        height: 320px; 
+    }
+}
+@media(max-width: 1130px){
+    .showcase__item{
+        width: 320px;
+        height: 520px;
+    }
+    .showcase__pic img{
+        width: 280px; 
+        height: 260px; 
+    }
+}
+@media(max-width: 1100px){
+    .showcase__header{
+        display: none;
+    }
+}
+
+/*------- three -------------------*/
+
+@media(max-width: 1150px)
+{
+    .three__title{
+        padding: 80px 80px;
+    }
+    .three__two-content{
+        margin-top: 70px;
+        padding: 90px 0px;
+    }
+    .three__text{
+        max-width: 280px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .three__text span:not(:last-child){
+        margin-bottom: 5px; 
+    }
+}
+
+
+/*------- Tablet/laptop version -------------------*/
+
+@media(max-width: 1000px)
+{
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    /*--------------header----------------------------*/
+
+    .red-butt{
+        padding: 0 20px; 
+    }
+    .menu__logo-link{
+        margin: 0 10px;
+    }
+
+    /*-----------hero------------------------------*/ 
+
+
+    .hero__container{
+        display: block;
+        
+    }
+    /*-----------hero-one---------------------------*/
+    .hero__big-logo{
+        position: relative;
+        max-height: 440px;
+        height: 440px;
+        width: 700px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    /*-----------one---------------------------*/ 
+
+    .one{
+
+    }
+
+    .one__container{
+    
+    }
+
+    .one__big-title{
+        display: block;
+        padding: 40px;
+    }
+    
+    .one__title{ 
+        font-size: 50px;
+        margin: 40px 0;
+    } 
+
+    .one__left-scorp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .one__left-scorp svg{
+        width: 300px;
+        height: 200px;
+    }
+
+    .one__right-scorp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .one__right-scorp svg{
+        width: 300px;
+        height: 200px;
+    }
+
+    .showcase__header{
+        display: none;
+    }
+    
+    .showcase__item-box{
+        display: block;
+
+    }
+
+    .showcase__item{
+        background-size: 100%; 
+        width: 436px; 
+        height: 658px;
+        margin: 0 auto;
+    }
+
+    .showcase__pic{
+        margin-bottom:40px;
+    }
+
+    .showcase__pic img{
+        width: 390px; 
+        height: 411px; 
+    }
+    /*--------------three------------------*/
+
+    .three{
+        height: auto;
+    }
+
+    .three__container{
+        display: block;
+    }
+
+    .three__one{
+        width: 100%;
+        max-width: 100%;
+        border-right: none;
+    }
+
+    .three__title{
+        padding: 50px 80px;
+    }
+
+    .three__img img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border-style: none;
+    }
+
+    .three__two{
+        border-top: 1px solid #000;
+        width: 100%;
+    }
+
+    .three__two-content{
+        margin-top: 0;
+        padding: 130px 0;
+    }
+
+    .three__text{
+        max-width: 390px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .three__text span:not(:last-child){
+        margin-bottom: 20px; 
+    }
+
+    /*------------ four -------------*/
+
+    .four__big-logo{
+        margin-top: -120px;
+    }
+}
+
+/*------- Mobile version -------------------*/
+
+@media(max-width: 767px)
+{
+    .container{
+        max-width: 700px;
+    }
+
+    /*-----------header------------------------------*/ 
+
+    .header{
+        display: block;
+        border: 1px solid #000;
+    }
+    .header__body{
+        border: none;
+    }
+   .header__body.container{
+       max-width: 200px;  
+    }
+    .menu__list{
+        display: block;
+    }
+
+    /*-----------hero------------------------------*/
+       .hero__container{
+        display: block;
+    }
+    /*-----------hero-one---------------------------*/
+    .hero__big-logo{
+        position: relative;
+        height: auto;
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+   
+    .hero__svg-one{
+        position: relative;
+        z-index: 1;
+    }
+ 
+    .ticker{
+        position: relative;
+        min-width: 300px;
+        display: block;
+    }
+    
+   .hero__pic-one{
+      padding: 10px;
+   }
+   
+       
+    /*-----------hero-two---------------------------*/ 
+   .hero__two{
+       border-top: 1px solid #000;
+    }
+    
+    .hero__title{
+        font-size: 42px;  
+    }
+     
+    .hero__pic-two{
+        padding: 10px;
+    }
+    
+    .hero__pic-two img{
+        width: 100%;
+        height: 100%;
+    } 
+    /*-----------one---------------------------*/ 
+
+
+    .one__big-title{
+        display: block;
+        padding: 40px;
+    }
+    
+    .one__title{ 
+        font-size: 40px;
+        margin: 40px 0;
+    } 
+
+    .one__left-scorp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .one__left-scorp svg{
+        width: 50%;
+        height: 50%;
+    }
+
+    .one__right-scorp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .one__right-scorp svg{
+        width: 50%;
+        height: 50%;
+    }
+
+    
+    /*--------------three------------------*/
+
+    .three{
+        height: auto;
+    }
+
+    .three__container{
+        display: block;
+    }
+
+    .three__one{
+        width: 100%;
+        max-width: 100%;
+        border-right: none;
+    }
+
+    .three__title{
+        padding: 50px 80px;
+    }
+
+    .three__img img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border-style: none;
+    }
+
+    .three__two{
+        border-top: 1px solid #000;
+        width: 100%;
+    }
+
+    .three__two-content{
+        margin-top: 0;
+        padding: 130px 0;
+    }
+
+    .three__text{
+        max-width: 390px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .three__text span:not(:last-child){
+        margin-bottom: 20px; 
+    }
+
+    /*------------ four -------------*/
+
+    .four__big-logo{
+        margin-top: -45px;
+    }
+
+}
+
+@media(max-width: 480px)
+{
+    .showcase__item{
+        width: 100%;
+        height: 100%;
+    }
+    .showcase__pic img{
+        width: 100%; 
+        height: 100%;
+    }
+    .showcase__pic{
+        padding-top: 10px;
+    }
+
+    .showcase__title-one{
+        padding-top: 70px;
+    }
+}
+
+
+
+
+
